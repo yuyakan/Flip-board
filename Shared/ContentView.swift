@@ -9,8 +9,46 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        let img = ["whiteboard", "brackboard", "manga", "book", "sky", "star"]
+        let img2 = ["brick", "brackboard2", "color", "brick2", "wall", "sky2"]
+        let views: [AnyView] = [AnyView(WhiteSettingView()),AnyView(BrackSettingView()),AnyView(MangaSettingView()),AnyView(BookSettingView()),AnyView(SkySettingView()),AnyView(StarSettingView())]
+        let views2: [AnyView] = [AnyView(BrickSettingView()),AnyView(Brack2SettingView()),AnyView(ColorSettingView()),AnyView(Brick2SettingView()),AnyView(WallSettingView()),AnyView(Sky2SettingView())]
+        NavigationView{
+            VStack{
+                Spacer()
+                ScrollView(.horizontal, showsIndicators: false) {
+                            HStack(spacing: 20) {
+                                ForEach(0...5, id: \.self) { value in
+                                    GeometryReader { geometry in
+                                        NavigationLink(destination: views[value]) {
+                                            Image("\(img[value])")
+                                            .rotation3DEffect(Angle(degrees: (Double(geometry.frame(in: .global).minX) - 150) / -8), axis: (x: 0, y: 10, 0))
+                                        }
+                                    }
+                                    .frame(width: 180, height: 300)
+                                }
+                            }
+                            .padding(40)
+                        }
+                Spacer()
+                Text("Please select background").font(.largeTitle)
+                Spacer()
+                ScrollView(.horizontal, showsIndicators: false) {
+                            HStack(spacing: 20) {
+                                ForEach(0...5, id: \.self) { value in
+                                    GeometryReader { geometry in
+                                        NavigationLink(destination: views2[value]) {
+                                            Image("\(img2[value])")
+                                            .rotation3DEffect(Angle(degrees: (Double(geometry.frame(in: .global).minX) - 150) / -8), axis: (x: 0, y: 10, 0))
+                                        }
+                                    }
+                                    .frame(width: 180, height: 300)
+                                }
+                            }
+                            .padding(40)
+                        }
+            }.navigationBarHidden(true)
+        }.navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

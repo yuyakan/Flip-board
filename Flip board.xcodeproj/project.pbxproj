@@ -17,6 +17,54 @@
 		4B8D44F827C8B0C600172867 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D44CE27C8B0C400172867 /* ContentView.swift */; };
 		4B8D44F927C8B0C600172867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B8D44CF27C8B0C600172867 /* Assets.xcassets */; };
 		4B8D44FA27C8B0C600172867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B8D44CF27C8B0C600172867 /* Assets.xcassets */; };
+		4B8D450A27C8B98C00172867 /* WhiteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D450927C8B98C00172867 /* WhiteView.swift */; };
+		4B8D450B27C8B98C00172867 /* WhiteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D450927C8B98C00172867 /* WhiteView.swift */; };
+		4B8D450D27C8BB5000172867 /* WhiteSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D450C27C8BB5000172867 /* WhiteSettingView.swift */; };
+		4B8D450E27C8BB5000172867 /* WhiteSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D450C27C8BB5000172867 /* WhiteSettingView.swift */; };
+		4B8D451027C9EC7200172867 /* BrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D450F27C9EC7200172867 /* BrackView.swift */; };
+		4B8D451127C9EC7200172867 /* BrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D450F27C9EC7200172867 /* BrackView.swift */; };
+		4B8D451327C9EC9A00172867 /* BrackSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D451227C9EC9A00172867 /* BrackSettingView.swift */; };
+		4B8D451427C9EC9A00172867 /* BrackSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D451227C9EC9A00172867 /* BrackSettingView.swift */; };
+		4B8D451627C9ECB300172867 /* MangaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D451527C9ECB300172867 /* MangaView.swift */; };
+		4B8D451727C9ECB300172867 /* MangaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D451527C9ECB300172867 /* MangaView.swift */; };
+		4B8D451927C9ECCE00172867 /* MangaSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D451827C9ECCE00172867 /* MangaSettingView.swift */; };
+		4B8D451A27C9ECCE00172867 /* MangaSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D451827C9ECCE00172867 /* MangaSettingView.swift */; };
+		4B8D451C27C9ED4A00172867 /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D451B27C9ED4A00172867 /* BookView.swift */; };
+		4B8D451D27C9ED4A00172867 /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D451B27C9ED4A00172867 /* BookView.swift */; };
+		4B8D451F27C9ED6500172867 /* BookSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D451E27C9ED6500172867 /* BookSettingView.swift */; };
+		4B8D452027C9ED6500172867 /* BookSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D451E27C9ED6500172867 /* BookSettingView.swift */; };
+		4B8D452227C9ED7B00172867 /* SkyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D452127C9ED7B00172867 /* SkyView.swift */; };
+		4B8D452327C9ED7B00172867 /* SkyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D452127C9ED7B00172867 /* SkyView.swift */; };
+		4B8D452527C9ED9300172867 /* SkySettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D452427C9ED9300172867 /* SkySettingView.swift */; };
+		4B8D452627C9ED9300172867 /* SkySettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D452427C9ED9300172867 /* SkySettingView.swift */; };
+		4B8D452827C9EDE100172867 /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D452727C9EDE100172867 /* StarView.swift */; };
+		4B8D452927C9EDE100172867 /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D452727C9EDE100172867 /* StarView.swift */; };
+		4B8D452B27C9EE0200172867 /* StarSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D452A27C9EE0200172867 /* StarSettingView.swift */; };
+		4B8D452C27C9EE0200172867 /* StarSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D452A27C9EE0200172867 /* StarSettingView.swift */; };
+		4B8D452E27CA2A4B00172867 /* BrickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D452D27CA2A4B00172867 /* BrickView.swift */; };
+		4B8D452F27CA2A4B00172867 /* BrickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D452D27CA2A4B00172867 /* BrickView.swift */; };
+		4B8D453127CA2A5C00172867 /* BrickSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D453027CA2A5C00172867 /* BrickSettingView.swift */; };
+		4B8D453227CA2A5C00172867 /* BrickSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D453027CA2A5C00172867 /* BrickSettingView.swift */; };
+		4B8D453427CA2A6C00172867 /* Brick2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D453327CA2A6C00172867 /* Brick2View.swift */; };
+		4B8D453527CA2A6C00172867 /* Brick2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D453327CA2A6C00172867 /* Brick2View.swift */; };
+		4B8D453727CA2A8200172867 /* Brick2SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D453627CA2A8200172867 /* Brick2SettingView.swift */; };
+		4B8D453827CA2A8200172867 /* Brick2SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D453627CA2A8200172867 /* Brick2SettingView.swift */; };
+		4B8D453A27CA2A9000172867 /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D453927CA2A9000172867 /* ColorView.swift */; };
+		4B8D453B27CA2A9000172867 /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D453927CA2A9000172867 /* ColorView.swift */; };
+		4B8D453D27CA2AA200172867 /* ColorSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D453C27CA2AA200172867 /* ColorSettingView.swift */; };
+		4B8D453E27CA2AA200172867 /* ColorSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D453C27CA2AA200172867 /* ColorSettingView.swift */; };
+		4B8D454027CA2ABB00172867 /* Sky2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D453F27CA2ABA00172867 /* Sky2View.swift */; };
+		4B8D454127CA2ABB00172867 /* Sky2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D453F27CA2ABA00172867 /* Sky2View.swift */; };
+		4B8D454327CA2ACA00172867 /* Sky2SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D454227CA2ACA00172867 /* Sky2SettingView.swift */; };
+		4B8D454427CA2ACA00172867 /* Sky2SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D454227CA2ACA00172867 /* Sky2SettingView.swift */; };
+		4B8D454627CA2ADF00172867 /* WallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D454527CA2ADF00172867 /* WallView.swift */; };
+		4B8D454727CA2ADF00172867 /* WallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D454527CA2ADF00172867 /* WallView.swift */; };
+		4B8D454927CA2AF100172867 /* WallSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D454827CA2AF100172867 /* WallSettingView.swift */; };
+		4B8D454A27CA2AF100172867 /* WallSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D454827CA2AF100172867 /* WallSettingView.swift */; };
+		4B8D454C27CA2B1700172867 /* Brack2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D454B27CA2B1700172867 /* Brack2View.swift */; };
+		4B8D454D27CA2B1700172867 /* Brack2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D454B27CA2B1700172867 /* Brack2View.swift */; };
+		4B8D454F27CA2B2E00172867 /* Brack2SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D454E27CA2B2E00172867 /* Brack2SettingView.swift */; };
+		4B8D455027CA2B2E00172867 /* Brack2SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D454E27CA2B2E00172867 /* Brack2SettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +97,30 @@
 		4B8D44ED27C8B0C600172867 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B8D44F127C8B0C600172867 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		4B8D44F327C8B0C600172867 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		4B8D450927C8B98C00172867 /* WhiteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteView.swift; sourceTree = "<group>"; };
+		4B8D450C27C8BB5000172867 /* WhiteSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteSettingView.swift; sourceTree = "<group>"; };
+		4B8D450F27C9EC7200172867 /* BrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrackView.swift; sourceTree = "<group>"; };
+		4B8D451227C9EC9A00172867 /* BrackSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrackSettingView.swift; sourceTree = "<group>"; };
+		4B8D451527C9ECB300172867 /* MangaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaView.swift; sourceTree = "<group>"; };
+		4B8D451827C9ECCE00172867 /* MangaSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaSettingView.swift; sourceTree = "<group>"; };
+		4B8D451B27C9ED4A00172867 /* BookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
+		4B8D451E27C9ED6500172867 /* BookSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSettingView.swift; sourceTree = "<group>"; };
+		4B8D452127C9ED7B00172867 /* SkyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyView.swift; sourceTree = "<group>"; };
+		4B8D452427C9ED9300172867 /* SkySettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkySettingView.swift; sourceTree = "<group>"; };
+		4B8D452727C9EDE100172867 /* StarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarView.swift; sourceTree = "<group>"; };
+		4B8D452A27C9EE0200172867 /* StarSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarSettingView.swift; sourceTree = "<group>"; };
+		4B8D452D27CA2A4B00172867 /* BrickView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrickView.swift; sourceTree = "<group>"; };
+		4B8D453027CA2A5C00172867 /* BrickSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrickSettingView.swift; sourceTree = "<group>"; };
+		4B8D453327CA2A6C00172867 /* Brick2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brick2View.swift; sourceTree = "<group>"; };
+		4B8D453627CA2A8200172867 /* Brick2SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brick2SettingView.swift; sourceTree = "<group>"; };
+		4B8D453927CA2A9000172867 /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
+		4B8D453C27CA2AA200172867 /* ColorSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSettingView.swift; sourceTree = "<group>"; };
+		4B8D453F27CA2ABA00172867 /* Sky2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sky2View.swift; sourceTree = "<group>"; };
+		4B8D454227CA2ACA00172867 /* Sky2SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sky2SettingView.swift; sourceTree = "<group>"; };
+		4B8D454527CA2ADF00172867 /* WallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallView.swift; sourceTree = "<group>"; };
+		4B8D454827CA2AF100172867 /* WallSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallSettingView.swift; sourceTree = "<group>"; };
+		4B8D454B27CA2B1700172867 /* Brack2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brack2View.swift; sourceTree = "<group>"; };
+		4B8D454E27CA2B2E00172867 /* Brack2SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brack2SettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +171,30 @@
 			children = (
 				4B8D44CD27C8B0C400172867 /* Flip_boardApp.swift */,
 				4B8D44CE27C8B0C400172867 /* ContentView.swift */,
+				4B8D450927C8B98C00172867 /* WhiteView.swift */,
+				4B8D450C27C8BB5000172867 /* WhiteSettingView.swift */,
+				4B8D450F27C9EC7200172867 /* BrackView.swift */,
+				4B8D451227C9EC9A00172867 /* BrackSettingView.swift */,
+				4B8D451527C9ECB300172867 /* MangaView.swift */,
+				4B8D451827C9ECCE00172867 /* MangaSettingView.swift */,
+				4B8D451B27C9ED4A00172867 /* BookView.swift */,
+				4B8D451E27C9ED6500172867 /* BookSettingView.swift */,
+				4B8D452127C9ED7B00172867 /* SkyView.swift */,
+				4B8D452427C9ED9300172867 /* SkySettingView.swift */,
+				4B8D452727C9EDE100172867 /* StarView.swift */,
+				4B8D452A27C9EE0200172867 /* StarSettingView.swift */,
+				4B8D452D27CA2A4B00172867 /* BrickView.swift */,
+				4B8D453027CA2A5C00172867 /* BrickSettingView.swift */,
+				4B8D453327CA2A6C00172867 /* Brick2View.swift */,
+				4B8D453627CA2A8200172867 /* Brick2SettingView.swift */,
+				4B8D453927CA2A9000172867 /* ColorView.swift */,
+				4B8D453C27CA2AA200172867 /* ColorSettingView.swift */,
+				4B8D453F27CA2ABA00172867 /* Sky2View.swift */,
+				4B8D454227CA2ACA00172867 /* Sky2SettingView.swift */,
+				4B8D454527CA2ADF00172867 /* WallView.swift */,
+				4B8D454827CA2AF100172867 /* WallSettingView.swift */,
+				4B8D454B27CA2B1700172867 /* Brack2View.swift */,
+				4B8D454E27CA2B2E00172867 /* Brack2SettingView.swift */,
 				4B8D44CF27C8B0C600172867 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -299,8 +395,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B8D451C27C9ED4A00172867 /* BookView.swift in Sources */,
+				4B8D454927CA2AF100172867 /* WallSettingView.swift in Sources */,
+				4B8D454F27CA2B2E00172867 /* Brack2SettingView.swift in Sources */,
+				4B8D452B27C9EE0200172867 /* StarSettingView.swift in Sources */,
+				4B8D454027CA2ABB00172867 /* Sky2View.swift in Sources */,
+				4B8D452E27CA2A4B00172867 /* BrickView.swift in Sources */,
+				4B8D453427CA2A6C00172867 /* Brick2View.swift in Sources */,
+				4B8D451027C9EC7200172867 /* BrackView.swift in Sources */,
+				4B8D454627CA2ADF00172867 /* WallView.swift in Sources */,
+				4B8D454327CA2ACA00172867 /* Sky2SettingView.swift in Sources */,
+				4B8D452827C9EDE100172867 /* StarView.swift in Sources */,
+				4B8D453727CA2A8200172867 /* Brick2SettingView.swift in Sources */,
+				4B8D453127CA2A5C00172867 /* BrickSettingView.swift in Sources */,
+				4B8D451327C9EC9A00172867 /* BrackSettingView.swift in Sources */,
+				4B8D452527C9ED9300172867 /* SkySettingView.swift in Sources */,
+				4B8D450A27C8B98C00172867 /* WhiteView.swift in Sources */,
+				4B8D451F27C9ED6500172867 /* BookSettingView.swift in Sources */,
 				4B8D44F727C8B0C600172867 /* ContentView.swift in Sources */,
+				4B8D453D27CA2AA200172867 /* ColorSettingView.swift in Sources */,
 				4B8D44F527C8B0C600172867 /* Flip_boardApp.swift in Sources */,
+				4B8D451627C9ECB300172867 /* MangaView.swift in Sources */,
+				4B8D451927C9ECCE00172867 /* MangaSettingView.swift in Sources */,
+				4B8D452227C9ED7B00172867 /* SkyView.swift in Sources */,
+				4B8D453A27CA2A9000172867 /* ColorView.swift in Sources */,
+				4B8D454C27CA2B1700172867 /* Brack2View.swift in Sources */,
+				4B8D450D27C8BB5000172867 /* WhiteSettingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,8 +428,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B8D451D27C9ED4A00172867 /* BookView.swift in Sources */,
+				4B8D454A27CA2AF100172867 /* WallSettingView.swift in Sources */,
+				4B8D455027CA2B2E00172867 /* Brack2SettingView.swift in Sources */,
+				4B8D452C27C9EE0200172867 /* StarSettingView.swift in Sources */,
+				4B8D454127CA2ABB00172867 /* Sky2View.swift in Sources */,
+				4B8D452F27CA2A4B00172867 /* BrickView.swift in Sources */,
+				4B8D453527CA2A6C00172867 /* Brick2View.swift in Sources */,
+				4B8D451127C9EC7200172867 /* BrackView.swift in Sources */,
+				4B8D454727CA2ADF00172867 /* WallView.swift in Sources */,
+				4B8D454427CA2ACA00172867 /* Sky2SettingView.swift in Sources */,
+				4B8D452927C9EDE100172867 /* StarView.swift in Sources */,
+				4B8D453827CA2A8200172867 /* Brick2SettingView.swift in Sources */,
+				4B8D453227CA2A5C00172867 /* BrickSettingView.swift in Sources */,
+				4B8D451427C9EC9A00172867 /* BrackSettingView.swift in Sources */,
+				4B8D452627C9ED9300172867 /* SkySettingView.swift in Sources */,
+				4B8D450B27C8B98C00172867 /* WhiteView.swift in Sources */,
+				4B8D452027C9ED6500172867 /* BookSettingView.swift in Sources */,
 				4B8D44F827C8B0C600172867 /* ContentView.swift in Sources */,
+				4B8D453E27CA2AA200172867 /* ColorSettingView.swift in Sources */,
 				4B8D44F627C8B0C600172867 /* Flip_boardApp.swift in Sources */,
+				4B8D451727C9ECB300172867 /* MangaView.swift in Sources */,
+				4B8D451A27C9ECCE00172867 /* MangaSettingView.swift in Sources */,
+				4B8D452327C9ED7B00172867 /* SkyView.swift in Sources */,
+				4B8D453B27CA2A9000172867 /* ColorView.swift in Sources */,
+				4B8D454D27CA2B1700172867 /* Brack2View.swift in Sources */,
+				4B8D450E27C8BB5000172867 /* WhiteSettingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,13 +609,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2NGCBTHK5K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -494,13 +639,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2NGCBTHK5K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
