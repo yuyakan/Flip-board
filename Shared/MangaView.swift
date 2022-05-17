@@ -21,12 +21,16 @@ struct MangaView: View {
         let height = Double(bounds.height)
         let width = Double(bounds.width)
         ZStack{
-            Image("manga")
-                .resizable()
-                .edgesIgnoringSafeArea(.all)
-            Text(text).foregroundColor(textcolor).font(.system(size: text.count < 6 ? height * 0.5 / Double(text.count) : height * 0.7 / 7,design: fonts[selection - 1])).rotationEffect(Angle.degrees(90)).frame(width: height * 0.67, height: width * 0.8)
             VStack{
-                Spacer()
+                HStack{
+                    Button(action: {
+                        }, label: {
+                            Text("　")
+                    })
+                }
+                Image("manga")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
                 HStack{
                     Button(action: {
                         self.presentation.wrappedValue.dismiss()
@@ -38,7 +42,9 @@ struct MangaView: View {
                         .padding(.trailing, width  * 0.9)
                 }
             }
+            Text(text).foregroundColor(textcolor).font(.system(size: text.count < 6 ? height * 0.5 / Double(text.count) : height * 0.7 / 7,design: fonts[selection - 1])).rotationEffect(Angle.degrees(90)).frame(width: height * 0.65, height: width * 0.8)
         }.navigationBarHidden(true)
     }
 }
+
 

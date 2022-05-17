@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3AC6BC3EE0E7711F569CD75D /* Pods_Flip_board__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31CB129647EB6F04A76FA903 /* Pods_Flip_board__iOS_.framework */; };
 		4B8D44E627C8B0C600172867 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D44E527C8B0C600172867 /* Tests_iOS.swift */; };
 		4B8D44E827C8B0C600172867 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D44E727C8B0C600172867 /* Tests_iOSLaunchTests.swift */; };
 		4B8D44F227C8B0C600172867 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D44F127C8B0C600172867 /* Tests_macOS.swift */; };
@@ -65,6 +66,7 @@
 		4B8D454D27CA2B1700172867 /* Brack2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D454B27CA2B1700172867 /* Brack2View.swift */; };
 		4B8D454F27CA2B2E00172867 /* Brack2SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D454E27CA2B2E00172867 /* Brack2SettingView.swift */; };
 		4B8D455027CA2B2E00172867 /* Brack2SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D454E27CA2B2E00172867 /* Brack2SettingView.swift */; };
+		863EA605F9492E4FB368C3CD /* Pods_Flip_board__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B8DDEAE822FB140B5DAF36B /* Pods_Flip_board__macOS_.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		31CB129647EB6F04A76FA903 /* Pods_Flip_board__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flip_board__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B8DDEAE822FB140B5DAF36B /* Pods_Flip_board__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flip_board__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B8D44CD27C8B0C400172867 /* Flip_boardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flip_boardApp.swift; sourceTree = "<group>"; };
 		4B8D44CE27C8B0C400172867 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4B8D44CF27C8B0C600172867 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -121,6 +125,11 @@
 		4B8D454827CA2AF100172867 /* WallSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallSettingView.swift; sourceTree = "<group>"; };
 		4B8D454B27CA2B1700172867 /* Brack2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brack2View.swift; sourceTree = "<group>"; };
 		4B8D454E27CA2B2E00172867 /* Brack2SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brack2SettingView.swift; sourceTree = "<group>"; };
+		4B8D455727CB236600172867 /* Flip-board--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Flip-board--iOS--Info.plist"; sourceTree = "<group>"; };
+		670FA2FF93D8CD5327117FC2 /* Pods-Flip board (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flip board (iOS).debug.xcconfig"; path = "Target Support Files/Pods-Flip board (iOS)/Pods-Flip board (iOS).debug.xcconfig"; sourceTree = "<group>"; };
+		67D5CB79D79EF249B793E344 /* Pods-Flip board (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flip board (macOS).debug.xcconfig"; path = "Target Support Files/Pods-Flip board (macOS)/Pods-Flip board (macOS).debug.xcconfig"; sourceTree = "<group>"; };
+		C2D6BB9C7ECB04C86341FE2D /* Pods-Flip board (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flip board (iOS).release.xcconfig"; path = "Target Support Files/Pods-Flip board (iOS)/Pods-Flip board (iOS).release.xcconfig"; sourceTree = "<group>"; };
+		C470D8FE3873B07BC4130C98 /* Pods-Flip board (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flip board (macOS).release.xcconfig"; path = "Target Support Files/Pods-Flip board (macOS)/Pods-Flip board (macOS).release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AC6BC3EE0E7711F569CD75D /* Pods_Flip_board__iOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +145,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				863EA605F9492E4FB368C3CD /* Pods_Flip_board__macOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,14 +166,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23C2D283FC03E55F4909C2C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31CB129647EB6F04A76FA903 /* Pods_Flip_board__iOS_.framework */,
+				3B8DDEAE822FB140B5DAF36B /* Pods_Flip_board__macOS_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4B8D44C727C8B0C400172867 = {
 			isa = PBXGroup;
 			children = (
+				4B8D455727CB236600172867 /* Flip-board--iOS--Info.plist */,
 				4B8D44CC27C8B0C400172867 /* Shared */,
 				4B8D44DB27C8B0C600172867 /* macOS */,
 				4B8D44E427C8B0C600172867 /* Tests iOS */,
 				4B8D44F027C8B0C600172867 /* Tests macOS */,
 				4B8D44D527C8B0C600172867 /* Products */,
+				D71D5D287FAF301BFD9CA00D /* Pods */,
+				23C2D283FC03E55F4909C2C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -237,6 +260,17 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
+		D71D5D287FAF301BFD9CA00D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				670FA2FF93D8CD5327117FC2 /* Pods-Flip board (iOS).debug.xcconfig */,
+				C2D6BB9C7ECB04C86341FE2D /* Pods-Flip board (iOS).release.xcconfig */,
+				67D5CB79D79EF249B793E344 /* Pods-Flip board (macOS).debug.xcconfig */,
+				C470D8FE3873B07BC4130C98 /* Pods-Flip board (macOS).release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -244,9 +278,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B8D44FD27C8B0C600172867 /* Build configuration list for PBXNativeTarget "Flip board (iOS)" */;
 			buildPhases = (
+				E7A16CFEDD35C64D3ABF9782 /* [CP] Check Pods Manifest.lock */,
 				4B8D44D027C8B0C600172867 /* Sources */,
 				4B8D44D127C8B0C600172867 /* Frameworks */,
 				4B8D44D227C8B0C600172867 /* Resources */,
+				00B25AA842C86B156AD13989 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,6 +297,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B8D450027C8B0C600172867 /* Build configuration list for PBXNativeTarget "Flip board (macOS)" */;
 			buildPhases = (
+				A9B4F761881EC61E75BEFD93 /* [CP] Check Pods Manifest.lock */,
 				4B8D44D627C8B0C600172867 /* Sources */,
 				4B8D44D727C8B0C600172867 /* Frameworks */,
 				4B8D44D827C8B0C600172867 /* Resources */,
@@ -389,6 +426,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00B25AA842C86B156AD13989 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Flip board (iOS)/Pods-Flip board (iOS)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Flip board (iOS)/Pods-Flip board (iOS)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Flip board (iOS)/Pods-Flip board (iOS)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9B4F761881EC61E75BEFD93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Flip board (macOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7A16CFEDD35C64D3ABF9782 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Flip board (iOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4B8D44D027C8B0C600172867 /* Sources */ = {
@@ -604,6 +705,7 @@
 		};
 		4B8D44FE27C8B0C600172867 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 670FA2FF93D8CD5327117FC2 /* Pods-Flip board (iOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -612,6 +714,7 @@
 				DEVELOPMENT_TEAM = 2NGCBTHK5K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Flip-board--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -622,7 +725,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "kanbe1365.Flip-board";
 				PRODUCT_NAME = "Flip board";
 				SDKROOT = iphoneos;
@@ -634,6 +737,7 @@
 		};
 		4B8D44FF27C8B0C600172867 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2D6BB9C7ECB04C86341FE2D /* Pods-Flip board (iOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -642,6 +746,7 @@
 				DEVELOPMENT_TEAM = 2NGCBTHK5K;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Flip-board--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -652,7 +757,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "kanbe1365.Flip-board";
 				PRODUCT_NAME = "Flip board";
 				SDKROOT = iphoneos;
@@ -665,10 +770,12 @@
 		};
 		4B8D450127C8B0C600172867 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67D5CB79D79EF249B793E344 /* Pods-Flip board (macOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -691,10 +798,12 @@
 		};
 		4B8D450227C8B0C600172867 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C470D8FE3873B07BC4130C98 /* Pods-Flip board (macOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;

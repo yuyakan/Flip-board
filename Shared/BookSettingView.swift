@@ -19,6 +19,7 @@ struct BookSettingView: View {
         let height = Double(bounds.width)
         ZStack{
             VStack{
+                Spacer()
                 ZStack{
                     Image("book").rotationEffect(Angle.degrees(-90))
                     Text(text).foregroundColor(textcolor).font(.system(size: text.count < 6 ? height * 0.5 / Double(text.count) : height * 0.7 / 7, design: fonts[selection - 1])).frame(width: 300 * 0.8, height:  220 * 0.67)
@@ -26,23 +27,23 @@ struct BookSettingView: View {
                 Spacer()
                 HStack{
                     Text("Text")
-                        .font(.system(.largeTitle,design: fonts[selection - 1]))
+                        .font(.system(.title,design: fonts[selection - 1]))
                         .padding()
                     Spacer()
                     TextField("", text: $text)
-                        .font(.largeTitle)
+                        .font(.title)
                         .frame(width: width * 0.6,alignment: .center)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .padding(.trailing)
                     
                 }
-                ColorPicker("Text color", selection: $textcolor).foregroundColor(Color.black).font(.system(.largeTitle,design: fonts[selection - 1])).padding(.trailing, width*0.1)
+                ColorPicker("Text color", selection: $textcolor).foregroundColor(Color.black).font(.system(.title,design: fonts[selection - 1])).padding(.trailing, width*0.1)
                     .padding()
                 HStack{
-                    Text("Font").font(.system(.largeTitle,design: fonts[selection - 1]))
+                    Text("Font").font(.system(.title,design: fonts[selection - 1]))
                         .padding()
                     Spacer()
-                    Picker(selection: $selection, label: Text("Font").font(.system(.largeTitle, design: .default))) {
+                    Picker(selection: $selection, label: Text("Font").font(.system(.title, design: .default))) {
                                     Text("default").font(.system(.largeTitle, design: .default)).tag(1)
                                     Text("rounded").font(.system(.largeTitle, design: .rounded)).tag(2)
                                     Text("serif").font(.system(.largeTitle, design: .serif)).tag(3)
@@ -52,9 +53,9 @@ struct BookSettingView: View {
                 }
                 Spacer()
                 NavigationLink(destination: BookView(text: $text, textcolor: $textcolor, backcolor: $backcolor, selection: $selection)) {
-                    Text("Flip").font(.largeTitle)
+                    Text("Flip").font(.title)
                 }
-                Spacer()
+                AdView().frame(width: 320, height: 50)
             }.navigationBarTitleDisplayMode(.inline)
         }
     }
