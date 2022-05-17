@@ -14,8 +14,8 @@
 		4B8D44F427C8B0C600172867 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D44F327C8B0C600172867 /* Tests_macOSLaunchTests.swift */; };
 		4B8D44F527C8B0C600172867 /* Flip_boardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D44CD27C8B0C400172867 /* Flip_boardApp.swift */; };
 		4B8D44F627C8B0C600172867 /* Flip_boardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D44CD27C8B0C400172867 /* Flip_boardApp.swift */; };
-		4B8D44F727C8B0C600172867 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D44CE27C8B0C400172867 /* ContentView.swift */; };
-		4B8D44F827C8B0C600172867 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D44CE27C8B0C400172867 /* ContentView.swift */; };
+		4B8D44F727C8B0C600172867 /* SelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D44CE27C8B0C400172867 /* SelectView.swift */; };
+		4B8D44F827C8B0C600172867 /* SelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D44CE27C8B0C400172867 /* SelectView.swift */; };
 		4B8D44F927C8B0C600172867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B8D44CF27C8B0C600172867 /* Assets.xcassets */; };
 		4B8D44FA27C8B0C600172867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B8D44CF27C8B0C600172867 /* Assets.xcassets */; };
 		4B8D450A27C8B98C00172867 /* WhiteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D450927C8B98C00172867 /* WhiteView.swift */; };
@@ -92,7 +92,7 @@
 		31CB129647EB6F04A76FA903 /* Pods_Flip_board__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flip_board__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B8DDEAE822FB140B5DAF36B /* Pods_Flip_board__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Flip_board__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B8D44CD27C8B0C400172867 /* Flip_boardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flip_boardApp.swift; sourceTree = "<group>"; };
-		4B8D44CE27C8B0C400172867 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4B8D44CE27C8B0C400172867 /* SelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectView.swift; sourceTree = "<group>"; };
 		4B8D44CF27C8B0C600172867 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B8D44D427C8B0C600172867 /* Flip board.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flip board.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B8D44DA27C8B0C600172867 /* Flip board.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flip board.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,7 +197,7 @@
 			children = (
 				4B8D44CD27C8B0C400172867 /* Flip_boardApp.swift */,
 				4B93F9152833CB210076288F /* AdView.swift */,
-				4B8D44CE27C8B0C400172867 /* ContentView.swift */,
+				4B8D44CE27C8B0C400172867 /* SelectView.swift */,
 				4B8D450927C8B98C00172867 /* WhiteView.swift */,
 				4B8D450C27C8BB5000172867 /* WhiteSettingView.swift */,
 				4B8D450F27C9EC7200172867 /* BrackView.swift */,
@@ -518,7 +518,7 @@
 				4B93F9162833CB210076288F /* AdView.swift in Sources */,
 				4B8D450A27C8B98C00172867 /* WhiteView.swift in Sources */,
 				4B8D451F27C9ED6500172867 /* BookSettingView.swift in Sources */,
-				4B8D44F727C8B0C600172867 /* ContentView.swift in Sources */,
+				4B8D44F727C8B0C600172867 /* SelectView.swift in Sources */,
 				4B8D453D27CA2AA200172867 /* ColorSettingView.swift in Sources */,
 				4B8D44F527C8B0C600172867 /* Flip_boardApp.swift in Sources */,
 				4B8D451627C9ECB300172867 /* MangaView.swift in Sources */,
@@ -552,7 +552,7 @@
 				4B93F9172833CB210076288F /* AdView.swift in Sources */,
 				4B8D450B27C8B98C00172867 /* WhiteView.swift in Sources */,
 				4B8D452027C9ED6500172867 /* BookSettingView.swift in Sources */,
-				4B8D44F827C8B0C600172867 /* ContentView.swift in Sources */,
+				4B8D44F827C8B0C600172867 /* SelectView.swift in Sources */,
 				4B8D453E27CA2AA200172867 /* ColorSettingView.swift in Sources */,
 				4B8D44F627C8B0C600172867 /* Flip_boardApp.swift in Sources */,
 				4B8D451727C9ECB300172867 /* MangaView.swift in Sources */,

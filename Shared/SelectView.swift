@@ -8,7 +8,7 @@
 import SwiftUI
 import GoogleMobileAds
 
-struct ContentView: View {
+struct SelectView: View {
     var body: some View {
         let upperImage = ["whiteboard", "brackboard", "manga", "book", "sky", "star"]
         let lowerImage = ["brick", "brackboard2", "color", "brick2", "wall", "sky2"]
@@ -55,6 +55,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        SelectView()
     }
 }
