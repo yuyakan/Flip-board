@@ -66,6 +66,8 @@
 		4B8D454D27CA2B1700172867 /* Brack2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D454B27CA2B1700172867 /* Brack2View.swift */; };
 		4B8D454F27CA2B2E00172867 /* Brack2SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D454E27CA2B2E00172867 /* Brack2SettingView.swift */; };
 		4B8D455027CA2B2E00172867 /* Brack2SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D454E27CA2B2E00172867 /* Brack2SettingView.swift */; };
+		4B93F9162833CB210076288F /* AdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B93F9152833CB210076288F /* AdView.swift */; };
+		4B93F9172833CB210076288F /* AdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B93F9152833CB210076288F /* AdView.swift */; };
 		863EA605F9492E4FB368C3CD /* Pods_Flip_board__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B8DDEAE822FB140B5DAF36B /* Pods_Flip_board__macOS_.framework */; };
 /* End PBXBuildFile section */
 
@@ -126,6 +128,7 @@
 		4B8D454B27CA2B1700172867 /* Brack2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brack2View.swift; sourceTree = "<group>"; };
 		4B8D454E27CA2B2E00172867 /* Brack2SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brack2SettingView.swift; sourceTree = "<group>"; };
 		4B8D455727CB236600172867 /* Flip-board--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Flip-board--iOS--Info.plist"; sourceTree = "<group>"; };
+		4B93F9152833CB210076288F /* AdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdView.swift; sourceTree = "<group>"; };
 		670FA2FF93D8CD5327117FC2 /* Pods-Flip board (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flip board (iOS).debug.xcconfig"; path = "Target Support Files/Pods-Flip board (iOS)/Pods-Flip board (iOS).debug.xcconfig"; sourceTree = "<group>"; };
 		67D5CB79D79EF249B793E344 /* Pods-Flip board (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flip board (macOS).debug.xcconfig"; path = "Target Support Files/Pods-Flip board (macOS)/Pods-Flip board (macOS).debug.xcconfig"; sourceTree = "<group>"; };
 		C2D6BB9C7ECB04C86341FE2D /* Pods-Flip board (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flip board (iOS).release.xcconfig"; path = "Target Support Files/Pods-Flip board (iOS)/Pods-Flip board (iOS).release.xcconfig"; sourceTree = "<group>"; };
@@ -193,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				4B8D44CD27C8B0C400172867 /* Flip_boardApp.swift */,
+				4B93F9152833CB210076288F /* AdView.swift */,
 				4B8D44CE27C8B0C400172867 /* ContentView.swift */,
 				4B8D450927C8B98C00172867 /* WhiteView.swift */,
 				4B8D450C27C8BB5000172867 /* WhiteSettingView.swift */,
@@ -511,6 +515,7 @@
 				4B8D453127CA2A5C00172867 /* BrickSettingView.swift in Sources */,
 				4B8D451327C9EC9A00172867 /* BrackSettingView.swift in Sources */,
 				4B8D452527C9ED9300172867 /* SkySettingView.swift in Sources */,
+				4B93F9162833CB210076288F /* AdView.swift in Sources */,
 				4B8D450A27C8B98C00172867 /* WhiteView.swift in Sources */,
 				4B8D451F27C9ED6500172867 /* BookSettingView.swift in Sources */,
 				4B8D44F727C8B0C600172867 /* ContentView.swift in Sources */,
@@ -544,6 +549,7 @@
 				4B8D453227CA2A5C00172867 /* BrickSettingView.swift in Sources */,
 				4B8D451427C9EC9A00172867 /* BrackSettingView.swift in Sources */,
 				4B8D452627C9ED9300172867 /* SkySettingView.swift in Sources */,
+				4B93F9172833CB210076288F /* AdView.swift in Sources */,
 				4B8D450B27C8B98C00172867 /* WhiteView.swift in Sources */,
 				4B8D452027C9ED6500172867 /* BookSettingView.swift in Sources */,
 				4B8D44F827C8B0C600172867 /* ContentView.swift in Sources */,

@@ -8,29 +8,12 @@
 import SwiftUI
 import GoogleMobileAds
 
-struct AdView: UIViewRepresentable {
-    func makeUIView(context: Context) -> GADBannerView {
-        let banner = GADBannerView(adSize: GADAdSizeBanner)
-        let scenes = UIApplication.shared.connectedScenes
-        let windowScenes = scenes.first as? UIWindowScene
-        let rootVC = windowScenes?.keyWindow?.rootViewController
-        
-        banner.adUnitID = "ca-app-pub-3940256099942544/2934735716"//テスト
-        banner.rootViewController = rootVC
-        banner.load(GADRequest())
-        return banner
-    }
-
-    func updateUIView(_ uiView: GADBannerView, context: Context) {
-    }
-}
-
 struct ContentView: View {
     var body: some View {
-        let img = ["whiteboard", "brackboard", "manga", "book", "sky", "star"]
-        let img2 = ["brick", "brackboard2", "color", "brick2", "wall", "sky2"]
-        let views: [AnyView] = [AnyView(WhiteSettingView()),AnyView(BrackSettingView()),AnyView(MangaSettingView()),AnyView(BookSettingView()),AnyView(SkySettingView()),AnyView(StarSettingView())]
-        let views2: [AnyView] = [AnyView(BrickSettingView()),AnyView(Brack2SettingView()),AnyView(ColorSettingView()),AnyView(Brick2SettingView()),AnyView(WallSettingView()),AnyView(Sky2SettingView())]
+        let upperImage = ["whiteboard", "brackboard", "manga", "book", "sky", "star"]
+        let lowerImage = ["brick", "brackboard2", "color", "brick2", "wall", "sky2"]
+        let upperViews: [AnyView] = [AnyView(WhiteSettingView()),AnyView(BrackSettingView()),AnyView(MangaSettingView()),AnyView(BookSettingView()),AnyView(SkySettingView()),AnyView(StarSettingView())]
+        let lowerViews: [AnyView] = [AnyView(BrickSettingView()),AnyView(Brack2SettingView()),AnyView(ColorSettingView()),AnyView(Brick2SettingView()),AnyView(WallSettingView()),AnyView(Sky2SettingView())]
         NavigationView{
             VStack{
                 Spacer()
@@ -38,8 +21,8 @@ struct ContentView: View {
                             HStack(spacing: 20) {
                                 ForEach(0...5, id: \.self) { value in
                                     GeometryReader { geometry in
-                                        NavigationLink(destination: views[value]) {
-                                            Image("\(img[value])")
+                                        NavigationLink(destination: upperViews[value]) {
+                                            Image("\(upperImage[value])")
                                             .rotation3DEffect(Angle(degrees: (Double(geometry.frame(in: .global).minX) - 150) / -8), axis: (x: 0, y: 10, 0))
                                         }
                                     }
@@ -55,8 +38,8 @@ struct ContentView: View {
                             HStack(spacing: 20) {
                                 ForEach(0...5, id: \.self) { value in
                                     GeometryReader { geometry in
-                                        NavigationLink(destination: views2[value]) {
-                                            Image("\(img2[value])")
+                                        NavigationLink(destination: lowerViews[value]) {
+                                            Image("\(lowerImage[value])")
                                             .rotation3DEffect(Angle(degrees: (Double(geometry.frame(in: .global).minX) - 150) / -8), axis: (x: 0, y: 10, 0))
                                         }
                                     }
