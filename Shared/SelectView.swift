@@ -9,6 +9,7 @@ import SwiftUI
 import GoogleMobileAds
 
 struct SelectView: View {
+    @ObservedObject var interstitial = Interstitial()
     var body: some View {
         let bounds = UIScreen.main.bounds
         let width = Double(bounds.width)
@@ -22,7 +23,7 @@ struct SelectView: View {
                     HStack(spacing: 20) {
                         ForEach(0...14, id: \.self) { index in
                             GeometryReader { geometry in
-                                NavigationLink(destination: BoardView(image: selectImage[index])) {
+                                NavigationLink(destination: BoardView(image: selectImage[index], interstitial: interstitial)) {
                                     Image("\(selectImage[index])")
                                         .resizable()
                                         .aspectRatio(contentMode: .fit)
@@ -32,11 +33,20 @@ struct SelectView: View {
                             }
                             .frame(width: height/2, height: height/2)
                         }.padding(.vertical, 20)
-                    }
+                    }.padding(.bottom, 20)
                 }.frame(height: height/2)
-                AdView().frame(width: 320, height: 50)
+                if height > 1000 {
+                    Spacer()
+                }
+                BannerView()
+                    .frame(width: 320, height: 50)
+                    .padding(.bottom, 10)
             }.navigationBarHidden(true)
-        }.navigationViewStyle(StackNavigationViewStyle())
+        }
+        .navigationViewStyle(StackNavigationViewStyle())
+        .onAppear() {
+            interstitial.loadInterstitial()
+        }
     }
 }
 

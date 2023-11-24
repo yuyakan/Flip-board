@@ -6,15 +6,15 @@
 //
 
 import Foundation
-
+import StoreKit
 import SwiftUI
 
 
 struct TextView: View, Identifiable {
     @State private var location: CGPoint = CGPoint(x: 180, y: 70)
-    @State var text: String = "Flip "
+    @State var text: String = "Flip"
     @State var textColor: Color = Color.yellow
-    @State var fontSelection = 2
+    @State var fontSelection = 1
     @FocusState var isActive: Bool
     
     @State private var textSize = 150.0
@@ -41,6 +41,12 @@ struct TextView: View, Identifiable {
             }
     }
     
+    private func requestReview() {
+        if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+            SKStoreReviewController.requestReview(in: scene)
+        }
+    }
+    
     var body: some View {
         let fonts:[Font.Design] = [.default, .rounded, .serif, .monospaced]
         let weights:[Font.Weight] = [.light, .black, .regular, .bold]
@@ -56,6 +62,7 @@ struct TextView: View, Identifiable {
             HStack {
                 Button(action: {
                     views = views.filter{$0.id != self.id}
+                    requestReview()
                 }, label: {
                     Image(systemName: "trash.fill")
                         .font(.system(size: 26))

@@ -22,6 +22,8 @@
 		4B8D44FA27C8B0C600172867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B8D44CF27C8B0C600172867 /* Assets.xcassets */; };
 		4B93F9162833CB210076288F /* AdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B93F9152833CB210076288F /* AdView.swift */; };
 		4B93F9172833CB210076288F /* AdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B93F9152833CB210076288F /* AdView.swift */; };
+		4B9C62A82B10F900006D15D1 /* InterstitialAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9C62A72B10F900006D15D1 /* InterstitialAd.swift */; };
+		4B9C62A92B10F900006D15D1 /* InterstitialAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9C62A72B10F900006D15D1 /* InterstitialAd.swift */; };
 		4BAADADF2B0CE46D0098C10F /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAADADE2B0CE46D0098C10F /* TextView.swift */; };
 		4BAADAE02B0CE46D0098C10F /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAADADE2B0CE46D0098C10F /* TextView.swift */; };
 		4BAADBA92B10F3D20098C10F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BAADBAC2B10F3D20098C10F /* Localizable.strings */; };
@@ -64,6 +66,7 @@
 		4B8D44F327C8B0C600172867 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		4B8D455727CB236600172867 /* Flip-board--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Flip-board--iOS--Info.plist"; sourceTree = "<group>"; };
 		4B93F9152833CB210076288F /* AdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdView.swift; sourceTree = "<group>"; };
+		4B9C62A72B10F900006D15D1 /* InterstitialAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialAd.swift; sourceTree = "<group>"; };
 		4BAADADE2B0CE46D0098C10F /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		4BAADBAD2B10F3D50098C10F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4BAADBAE2B10F3DA0098C10F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -143,7 +146,7 @@
 				4B8D44CD27C8B0C400172867 /* Flip_boardApp.swift */,
 				4B8D44CE27C8B0C400172867 /* SelectView.swift */,
 				4BAADAE12B0CEE940098C10F /* Board */,
-				4B93F9152833CB210076288F /* AdView.swift */,
+				4B9C62A62B10F8B0006D15D1 /* Ad */,
 				4BAADBAC2B10F3D20098C10F /* Localizable.strings */,
 				4B8D44CF27C8B0C600172867 /* Assets.xcassets */,
 			);
@@ -185,6 +188,15 @@
 				4B8D44F327C8B0C600172867 /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		4B9C62A62B10F8B0006D15D1 /* Ad */ = {
+			isa = PBXGroup;
+			children = (
+				4B93F9152833CB210076288F /* AdView.swift */,
+				4B9C62A72B10F900006D15D1 /* InterstitialAd.swift */,
+			);
+			path = Ad;
 			sourceTree = "<group>";
 		};
 		4BAADAE12B0CEE940098C10F /* Board */ = {
@@ -446,6 +458,7 @@
 				4B8D44F727C8B0C600172867 /* SelectView.swift in Sources */,
 				4B8D44F527C8B0C600172867 /* Flip_boardApp.swift in Sources */,
 				4B61E6BC2B0BA7D800431866 /* BoardView.swift in Sources */,
+				4B9C62A82B10F900006D15D1 /* InterstitialAd.swift in Sources */,
 				4BAADADF2B0CE46D0098C10F /* TextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,6 +471,7 @@
 				4B8D44F827C8B0C600172867 /* SelectView.swift in Sources */,
 				4B8D44F627C8B0C600172867 /* Flip_boardApp.swift in Sources */,
 				4B61E6BD2B0BA7D800431866 /* BoardView.swift in Sources */,
+				4B9C62A92B10F900006D15D1 /* InterstitialAd.swift in Sources */,
 				4BAADAE02B0CE46D0098C10F /* TextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -645,13 +659,15 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "kanbe1365.Flip-board";
 				PRODUCT_NAME = "Flip board";
 				SDKROOT = iphoneos;
@@ -676,13 +692,15 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeRight;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "kanbe1365.Flip-board";
 				PRODUCT_NAME = "Flip board";
 				SDKROOT = iphoneos;
