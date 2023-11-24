@@ -17,7 +17,7 @@ struct SelectView: View {
         NavigationView{
             VStack{
                 Spacer()
-                Text("Please select background").font(.largeTitle)
+                Text(LocalizedStringKey("choose")).font(.largeTitle)
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 20) {
                         ForEach(0...14, id: \.self) { index in
