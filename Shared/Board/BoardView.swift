@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct BoardView: View {
+    @ObservedObject var interstitial: Interstitial
     @Environment(\.undoManager) private var undoManager
     @Environment(\.dismiss) var dismiss
     @State var views : [TextView] = []
     let image: String
     
-    init(image: String) {
+    init(image: String, interstitial: Interstitial) {
         self.image = image
+        self.interstitial = interstitial
     }
     
     var body: some View {
@@ -23,6 +25,9 @@ struct BoardView: View {
         HStack{
             Spacer()
             VStack{
+                if height > 700 {
+                    Text("").frame(height: 100)
+                }
                 Button(action: {
                     dismiss()
                 }, label: {
@@ -33,7 +38,9 @@ struct BoardView: View {
                 Spacer()
             }
             VStack {
-                Text("").frame(height: 8)
+                if UIScreen.main.nativeBounds.height > 2208 || UIScreen.main.nativeBounds.height == 1792{
+                    Text("").frame(height: 12)
+                }
                 ZStack {
                     Image(image)
                         .resizable()
@@ -44,7 +51,7 @@ struct BoardView: View {
                     }
                 }
             }
-            .frame(width: height * 1.5, height: height * 1.5)
+            .frame(width: height > 700 ? height : height * 1.5, height: height > 700 ? height : height * 1.5)
             VStack{
                 Spacer()
                 Button(action: {
@@ -52,11 +59,18 @@ struct BoardView: View {
                     }, label: {
                         Image(systemName: "plus.circle")
                             .font(.system(size: 24))
-                            .padding(.leading,  6)
+                            .padding(UIScreen.main.nativeBounds.height > 2208 || UIScreen.main.nativeBounds.height == 1792 ? .trailing : [.bottom, .trailing] ,  10)
                 })
+                if height > 700 {
+                    Text("").frame(height: 100)
+                }
             }
             Spacer()
-        }.navigationBarHidden(true)
+        }
+        .navigationBarHidden(true)
+        .onAppear(){
+            interstitial.presentInterstitial()
+        }
     }
 }
 
