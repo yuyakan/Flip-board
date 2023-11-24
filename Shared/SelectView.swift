@@ -10,44 +10,31 @@ import GoogleMobileAds
 
 struct SelectView: View {
     var body: some View {
-        let upperImage = ["whiteboard", "brackboard", "manga", "book", "sky", "star"]
-        let lowerImage = ["brick", "brackboard2", "color", "brick2", "wall", "sky2"]
-        let upperImageTextColor = [Color.black, Color.black, Color.black, Color.black, Color.black, Color.black,]
-        let lowerImageTextColor = [Color.black, Color.black, Color.black, Color.black, Color.black, Color.black,]
+        let bounds = UIScreen.main.bounds
+        let width = Double(bounds.width)
+        let height = Double(bounds.height)
+        let selectImage = ["selectwhite", "brackboard", "manga", "book", "sky", "brick", "brackboard2", "brick2", "wall", "moon", "winter", "star", "sky2", "color", "sand"]
         NavigationView{
             VStack{
                 Spacer()
-                ScrollView(.horizontal, showsIndicators: false) {
-                            HStack(spacing: 20) {
-                                ForEach(0...5, id: \.self) { value in
-                                    GeometryReader { geometry in
-                                        NavigationLink(destination: SettingView(defaultTextColor: upperImageTextColor[value], image: upperImage[value])) {
-                                            Image("\(upperImage[value])")
-                                            .rotation3DEffect(Angle(degrees: (Double(geometry.frame(in: .global).minX) - 150) / -8), axis: (x: 0, y: 10, 0))
-                                        }
-                                    }
-                                    .frame(width: 180, height: 300)
-                                }
-                            }
-                            .padding(40)
-                        }
-                Spacer()
                 Text("Please select background").font(.largeTitle)
-                Spacer()
                 ScrollView(.horizontal, showsIndicators: false) {
-                            HStack(spacing: 20) {
-                                ForEach(0...5, id: \.self) { value in
-                                    GeometryReader { geometry in
-                                        NavigationLink(destination: SettingView(defaultTextColor: lowerImageTextColor[value], image: lowerImage[value])) {
-                                            Image("\(lowerImage[value])")
-                                            .rotation3DEffect(Angle(degrees: (Double(geometry.frame(in: .global).minX) - 150) / -8), axis: (x: 0, y: 10, 0))
-                                        }
-                                    }
-                                    .frame(width: 180, height: 300)
+                    HStack(spacing: 20) {
+                        ForEach(0...14, id: \.self) { index in
+                            GeometryReader { geometry in
+                                NavigationLink(destination: BoardView(image: selectImage[index])) {
+                                    Image("\(selectImage[index])")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .rotationEffect(Angle(degrees: 270))
+                                        .rotation3DEffect(Angle(degrees: (Double(geometry.frame(in: .global).minX) - width/2.4) / -8), axis: (x: 0, y: 10, 0))
                                 }
                             }
-                            .padding(40)
-                        }
+                            .frame(width: height/2, height: height/2)
+                        }.padding(.vertical, 20)
+                    }
+                }.frame(height: height/2)
+                AdView().frame(width: 320, height: 50)
             }.navigationBarHidden(true)
         }.navigationViewStyle(StackNavigationViewStyle())
     }
@@ -58,3 +45,4 @@ struct ContentView_Previews: PreviewProvider {
         SelectView()
     }
 }
+
