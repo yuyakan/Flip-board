@@ -10,7 +10,7 @@ import StoreKit
 import SwiftUI
 
 struct TextView: View, Identifiable {
-    @State private var location: CGPoint = CGPoint(x: 50, y: 40)
+    @State private var location: CGPoint = CGPoint(x: 50, y: 20)
     @State var text: String = ""
     @State var textColor: Color = Color.yellow
     @State var fontSelection = 1
@@ -20,8 +20,6 @@ struct TextView: View, Identifiable {
     @State private var textSize = 80.0
     @State private var magnifyBy = 1.0
     @State private var lastMagnificationValue = 1.0
-    
-    let editTextSize = 60.0
     
     @Binding var views: [TextView]
     let id: UUID
@@ -53,15 +51,19 @@ struct TextView: View, Identifiable {
     var body: some View {
         let fonts:[Font.Design] = [.default, .rounded, .serif, .monospaced]
         let weights:[Font.Weight] = [.light, .black, .regular, .bold]
+        let editTextSize = 60.0
+
         VStack(spacing: 0) {
             HStack(spacing: 0) {
-                TextField("",text: $text)
+                TextField("",text: $text, onCommit: {
+                    location = CGPoint(x: abs(Double(text.count) * editTextSize/4) + 20, y: 0)
+                })
                     .focused($isActive, equals: true)
+                    .focusedValue(\.myBoolData, true)
                     .font(.system(size: isActive ? editTextSize : textSize, weight: weights[fontSelection], design: fonts[fontSelection]))
                     .fixedSize(horizontal: true, vertical: false)
-                    .frame(width: isActive ? Double(text.count) * editTextSize/1.1 : Double(text.count) * textSize/1.1, height: isActive ? editTextSize : textSize)
+                    .frame(width: isActive ? abs(Double(text.count) * editTextSize/1.1) : abs(Double(text.count) * textSize), height: isActive ? editTextSize : abs(textSize), alignment: .center)
                     .foregroundColor(textColor)
-                    .focusedValue(\.myBoolData, true)
             }
             HStack {
                 Button(action: {
@@ -136,10 +138,10 @@ struct TextView: View, Identifiable {
             }
             .padding(.top, 4)
         }
-        .position(location)
+        .position(isActive ? CGPoint(x: abs(Double(text.count) * editTextSize/4) + 20, y: 30) : location)
         .gesture(DragGesture().onChanged({ value in self.location = value.location}))
         .gesture(magnification)
-        .frame(width: Double(text.count) * textSize / 2 + 30, height: textSize/2 + 30)
+        .frame(width: Double(text.count) * editTextSize / 2 + 30, height: editTextSize/2 + 30)
         .onAppear(){
             isActive = true
         }
