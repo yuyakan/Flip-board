@@ -9,13 +9,13 @@ import Foundation
 import StoreKit
 import SwiftUI
 
-
 struct TextView: View, Identifiable {
-    @State private var location: CGPoint = CGPoint(x: 180, y: 70)
-    @State var text: String = "Flip"
+    @State private var location: CGPoint = CGPoint(x: 60, y: 70)
+    @State var text: String = ""
     @State var textColor: Color = Color.yellow
     @State var fontSelection = 1
     @FocusState var isActive: Bool
+    @Binding var isEditing: Bool
     
     @State private var textSize = 150.0
     @State private var magnifyBy = 1.0
@@ -23,9 +23,10 @@ struct TextView: View, Identifiable {
     
     @Binding var views: [TextView]
     let id: UUID
-    init(views: Binding<[TextView]>, id: UUID) {
+    init(views: Binding<[TextView]>, id: UUID, isEditing: Binding<Bool>) {
         self._views = views
         self.id = id
+        self._isEditing = isEditing
     }
     
     var magnification: some Gesture {
@@ -53,16 +54,17 @@ struct TextView: View, Identifiable {
         VStack(spacing: 0) {
             HStack(spacing: 0) {
                 TextField("",text: $text)
-                    .focused($isActive)
+                    .focused($isActive, equals: true)
                     .font(.system(size: textSize, weight: weights[fontSelection], design: fonts[fontSelection]))
                     .fixedSize(horizontal: true, vertical: false)
                     .frame(width: Double(text.count) * textSize/1.1, height: textSize)
                     .foregroundColor(textColor)
+                    .focusedValue(\.myBoolData, true)
             }
             HStack {
                 Button(action: {
                     views = views.filter{$0.id != self.id}
-                    requestReview()
+//                    requestReview()
                 }, label: {
                     Image(systemName: "trash.fill")
                         .font(.system(size: 26))
@@ -136,5 +138,8 @@ struct TextView: View, Identifiable {
         .gesture(DragGesture().onChanged({ value in self.location = value.location}))
         .gesture(magnification)
         .frame(width: Double(text.count) * textSize / 2 + 30, height: textSize/2 + 30)
+        .onAppear(){
+            isActive = true
+        }
     }
 }
