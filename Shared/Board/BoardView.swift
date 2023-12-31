@@ -7,11 +7,24 @@
 
 import SwiftUI
 
+struct MyFocusedDataKey: FocusedValueKey {
+    typealias Value = Bool
+}
+
+extension FocusedValues {
+    var myBoolData: MyFocusedDataKey.Value? {
+        get { self[MyFocusedDataKey.self] }
+        set { self[MyFocusedDataKey.self] = newValue }
+    }
+}
+
 struct BoardView: View {
     @ObservedObject var interstitial: Interstitial
     @Environment(\.undoManager) private var undoManager
     @Environment(\.dismiss) var dismiss
     @State var views : [TextView] = []
+    @State var isEditing = false
+    @FocusedValue(\.myBoolData) var isFocused
     let image: String
     
     init(image: String, interstitial: Interstitial) {
@@ -55,12 +68,13 @@ struct BoardView: View {
             VStack{
                 Spacer()
                 Button(action: {
-                    views.append(TextView(views: $views, id: UUID()))
+                    views.append(TextView(views: $views, id: UUID(), isEditing: $isEditing))
                     }, label: {
                         Image(systemName: "plus.circle")
                             .font(.system(size: 24))
                             .padding(UIScreen.main.nativeBounds.height > 2208 || UIScreen.main.nativeBounds.height == 1792 ? .trailing : [.bottom, .trailing] ,  10)
-                })
+                    }).disabled(isFocused ?? false)
+                    .opacity(isFocused ?? false ? 0 : 1)
                 if height > 700 {
                     Text("").frame(height: 100)
                 }
@@ -73,4 +87,5 @@ struct BoardView: View {
         }
     }
 }
+
 

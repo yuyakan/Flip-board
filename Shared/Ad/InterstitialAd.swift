@@ -18,7 +18,8 @@ class Interstitial: NSObject, GADFullScreenContentDelegate, ObservableObject {
 
     // リワード広告の読み込み
     func loadInterstitial() {
-        let id = "cca-app-pub-3940256099942544/4411468910" //テスト
+        let id = "ca-app-pub-3940256099942544/4411468910"
+//        let id = "ca-app-pub-3155724310732667/6552503897"
         let request = GADRequest()
         request.scene = UIApplication.shared.connectedScenes.first as? UIWindowScene
         GADInterstitialAd.load(withAdUnitID: id, request: request) { (ad, error) in
