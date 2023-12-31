@@ -20,6 +20,7 @@ struct BannerView: UIViewControllerRepresentable {
 class GADBannerViewController: UIViewController, GADBannerViewDelegate {
     var bannerView: GADBannerView!
     let adUnitID = "ca-app-pub-3940256099942544/2934735716" //テスト
+//    let adUnitID = "ca-app-pub-3155724310732667/5094927316"
 
     override func viewDidLoad() {
         super.viewDidLoad()
