@@ -10,16 +10,18 @@ import StoreKit
 import SwiftUI
 
 struct TextView: View, Identifiable {
-    @State private var location: CGPoint = CGPoint(x: 60, y: 70)
+    @State private var location: CGPoint = CGPoint(x: 50, y: 40)
     @State var text: String = ""
     @State var textColor: Color = Color.yellow
     @State var fontSelection = 1
     @FocusState var isActive: Bool
     @Binding var isEditing: Bool
     
-    @State private var textSize = 150.0
+    @State private var textSize = 80.0
     @State private var magnifyBy = 1.0
     @State private var lastMagnificationValue = 1.0
+    
+    let editTextSize = 60.0
     
     @Binding var views: [TextView]
     let id: UUID
@@ -55,9 +57,9 @@ struct TextView: View, Identifiable {
             HStack(spacing: 0) {
                 TextField("",text: $text)
                     .focused($isActive, equals: true)
-                    .font(.system(size: textSize, weight: weights[fontSelection], design: fonts[fontSelection]))
+                    .font(.system(size: isActive ? editTextSize : textSize, weight: weights[fontSelection], design: fonts[fontSelection]))
                     .fixedSize(horizontal: true, vertical: false)
-                    .frame(width: Double(text.count) * textSize/1.1, height: textSize)
+                    .frame(width: isActive ? Double(text.count) * editTextSize/1.1 : Double(text.count) * textSize/1.1, height: isActive ? editTextSize : textSize)
                     .foregroundColor(textColor)
                     .focusedValue(\.myBoolData, true)
             }
